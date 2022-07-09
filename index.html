@@ -1,0 +1,40 @@
+<title>Users Details</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <style>
+        body {
+          background-image: url('login-bg.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+            background-size: cover;
+        } -->
+        </style>
+        <h1 style="text-align: center;">CURD APPLICATION</h1>
+    
+    <h1> Add Users</h1>
+    <form action = "/adduser" method="post">
+        User ID <input type="text" id="userid" name="userid" size="20" style="margin-left: 20px;"><br>
+        Name <input type="text" id="username" name="username" size="20" style="margin-top: 10px; margin-left: 31px;"><br>
+        DOB <input type="date" id="dob" name="dob" size="20" style="margin-top: 10px; margin-left: 35px;"><br>
+        Profession <input type="text" id="Profession" name="Profession" size="20" style="margin-top: 10px;"><br>
+        <button type="submit" Name="submit" style="margin-top: 10px;">Add Users</button>
+</form>
+
+<h1>Get Specific User Details</h1>
+<form action = "/Particularusers" method ="post">
+User ID <input type="text" id="usname" name="usname" size="20" style="margin-left: 10px;"><br>
+<button type ="submit" name = "submit" style="margin-top: 10px;">Get User Info</button>
+</form>
+<h1>Delete User Details</h1>
+<form action = "/deleteuser" method = "post">
+User ID <input type = "text" id = "uid" name = "uid" size = "20" style="margin-left: 10px;"><br>
+<button type="submit" name = "submit" style="margin-top: 10px;">Delete User</button>
+</form>
+
+<h1>Show all the User Details</h1>
+<form action ="/showalldetails" method = "get">
+<button type="submit" name="submit">Show Details</button>
+</form>
+</body>
+</html>
